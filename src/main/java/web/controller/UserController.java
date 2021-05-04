@@ -30,7 +30,7 @@ public class UserController {
     }
 
     @PostMapping(value = "/delete")
-    public String deleteUser(@ModelAttribute("id") Integer id) {
+    public String deleteUser(@ModelAttribute("id") Long id) {
         userService.deleteUser(id);
         return "redirect:/";
     }
@@ -42,7 +42,7 @@ public class UserController {
     }
 
     @GetMapping(value = "/update")
-    public String updateUser(@ModelAttribute("id") Integer id, Model model) {
+    public String updateUser(@ModelAttribute("id") Long id, Model model) {
         User user = userService.getUserById(id);
         model.addAttribute("user", user);
         return "update";

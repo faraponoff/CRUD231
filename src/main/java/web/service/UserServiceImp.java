@@ -26,7 +26,7 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
-    public void deleteUser(Integer id) {
+    public void deleteUser(Long id) {
         userDao.deleteUser(id);
     }
 
@@ -36,7 +36,7 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
-    public User getUserById(Integer id) {
+    public User getUserById(Long id) {
         return userDao.getUserById(id);
     }
 }

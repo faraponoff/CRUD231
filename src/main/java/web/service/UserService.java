@@ -10,10 +10,10 @@ public interface UserService {
 
     List<User> listUsers();
 
-    void deleteUser(Integer id);
+    void deleteUser(Long id);
 
     void updateUser(User user);
 
-    User getUserById(Integer id);
+    User getUserById(Long id);
 
 }
