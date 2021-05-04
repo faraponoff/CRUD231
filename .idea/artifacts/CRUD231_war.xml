@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="MyCrudSuperFinal.war">
+    <root id="archive" name="CRUD231.war">
       <element id="artifact" artifact-name="CRUD231:war exploded" />
     </root>
   </artifact>

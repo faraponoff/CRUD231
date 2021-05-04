@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="CRUD231:war exploded">
-    <output-path>$PROJECT_DIR$/target/MyCrudSuperFinal</output-path>
+    <output-path>$PROJECT_DIR$/target/CRUD231</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>MyCrudSuperFinal</module>
+        <module>CRUD231</module>
         <packaging>war</packaging>
       </options>
     </properties>
@@ -53,7 +53,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/MyCrudSuperFinal/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/CRUD231/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="CRUD231/web/Web" />
     </root>
