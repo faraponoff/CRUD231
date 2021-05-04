@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>All users</title>
+</head>
+<body>
+
+<div th:each=" user : ${users}">
+    id:
+    <tr th:text="${user.id}"></tr>
+    <br>
+    Name:
+    <tr th:text="${user.firstName}"></tr>
+    <br>
+    Surname:
+    <tr th:text="${user.lastName}"></tr>
+    <br>
+    e-mail:
+    <tr th:text="${user.email}"></tr>
+    <br>
+
+    <form method="get" th:action="@{/update}">
+        <input type="number" hidden name="id" th:value="${user.id}"/>
+        <p><input type="submit" value="Edit"></p>
+    </form>
+
+    <form method="post" th:action="@{/delete}">
+        <input type="number" hidden name="id" th:value="${user.id}"/>
+        <p><input type="submit" value="Delete"></p>
+    </form>
+    <hr>
+</div>
+
+<form method="post" th:action="@{/add}">
+    Name<label><input type="text" name="firstName"></label><br><br>
+    Surname<label><input type="text" name="lastName"></label><br><br>
+    e-mail<label><input type="text" name="email"></label><br><br>
+    <input type="submit" value="Add user"><br>
+</form>
+
+</body>
+</html>
